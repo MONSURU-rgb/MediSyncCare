@@ -11,7 +11,7 @@ export function Header() {
   const [opened, { toggle }] = useDisclosure();
   return (
     <header>
-      <section className="py-18 text-center bg-[var(--primary-700)] flex justify-center items-center flex-wrap">
+      <section className="py-18 text-center bg-[var(--primary-700)] flex justify-center items-center flex-wrap px-5">
         <span className="font-jakarta text-base text-white font-normal">
           MediSyncCare Selected for Y Combinator Accelerator Program.
         </span>
@@ -33,9 +33,9 @@ export function Header() {
               src="/MediSync-Logo-2.png"
             />
           </Link>
-          <HamburgerDropdown styles="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 min-[841px]:inline-flex whitespace-nowrap" />
+          <HamburgerDropdown styles="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 min-[841px]:inline-flex whitespace-nowrap transition duration-500" />
           <Link href="/">
-            <button className="rounded-[50px] p-3 bg-primary-500 flex gap-[10px] items-center cursor-pointer hover:bg-primary-500/90">
+            <button className="rounded-[50px] p-3 bg-primary-500 gap-[10px] items-center cursor-pointer hover:bg-primary-500/90 hidden md:flex">
               <FiDownload color="white" />
               <h5 className="text-base font-medium font-jakarta text-white whitespace-nowrap">
                 Download App
@@ -49,11 +49,15 @@ export function Header() {
             opened={opened}
             onClick={toggle}
             aria-label="Toggle navigation"
-            className="md:hidden block transition duration-500 relative"
+            className="md:hidden block relative"
+            transitionDuration={500}
           />
 
           {opened && (
-            <HamburgerDropdown styles="font-jakarta text-base text-neutral-600 font-normal cursor-pointer hover:text-white/50 whitespace-nowrap flex flex-col p-4 bg-primary-700 rounded-lg gap-5 text-white absolute right-[0px] z-50 md:hidden" />
+            <HamburgerDropdown
+              styles="font-jakarta text-base text-neutral-600 font-normal cursor-pointer hover:text-white/50 whitespace-nowrap flex flex-col p-4 bg-primary-700 rounded-lg gap-5 text-white absolute right-[0px] z-50 md:hidden duration-500"
+              withDownloadButton={true}
+            />
           )}
         </section>
       </nav>
