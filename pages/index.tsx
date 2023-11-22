@@ -76,7 +76,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <header>
-        <section className="py-18 text-center bg-[var(--primary-700)] flex justify-center items-center">
+        <section className="py-18 text-center bg-[var(--primary-700)] flex justify-center items-center flex-wrap">
           <span className="font-jakarta text-base text-white font-normal">
             MediSyncCare Selected for Y Combinator Accelerator Program.
           </span>
@@ -88,11 +88,11 @@ export default function Home() {
           </article>
         </section>
 
-        <nav className="px-96 py-18 flex justify-between items-center ">
+        <nav className="min-[800px]:px-96 px-5 py-18 flex justify-between items-center ">
           <Link href="/">
             <Image
               fill
-              className="!relative !w-198 !h-74 aspect-[2.3/1] cursor-pointer"
+              className="!relative !w-[198px] !h-[74px] cursor-pointer object-contain"
               alt="Company Logo"
               src="/MediSync Logo.svg"
             />
@@ -105,7 +105,7 @@ export default function Home() {
             className="bg-neutral-600"
           /> */}
 
-          <ul className="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 md:inline-flex">
+          <ul className="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 min-[800px]]:inline-flex whitespace-nowrap">
             <li>Home</li>
             <li>Features</li>
             <li>How it works</li>
@@ -115,7 +115,7 @@ export default function Home() {
           <Link href="/">
             <button className="rounded-[50px] p-3 bg-primary-500 flex gap-[10px] items-center cursor-pointer hover:bg-primary-500/90">
               <FiDownload color="white" />
-              <h5 className="text-base font-medium font-jakarta text-white">
+              <h5 className="text-base font-medium font-jakarta text-white whitespace-nowrap">
                 Download App
               </h5>
             </button>
@@ -127,7 +127,7 @@ export default function Home() {
         {/*  Hero Section */}
         <div className="grid gap-96 pt-90 pb-70 min-[874px]:grid-cols-2 md:px-96 px-5">
           <section className="flex flex-col gap-3">
-            <article className="rounded-[60px] py-3 px-[14px] gap-[10px] border border-[#D1E5FF] bg-primary-50 flex w-fit">
+            <article className="rounded-[60px] py-3 px-[14px] gap-[10px] border border-[#D1E5FF] bg-primary-50 sm:flex w-fit !hidden">
               <AiFillLock size="18" color="#032F69" />
               <p className="text-[13px]/150 font-normal text-primary-900">
                 The Best Medical Adherence Platform in Nigeria
@@ -296,12 +296,12 @@ export default function Home() {
         {/* How it works section */}
 
         <div className="p-45 rounded-3xl bg-primary-500 flex flex-col gap-10 md:mx-96 mx-5">
-          <section className="flex justify-between">
+          <section className="flex justify-between items-center">
             <h3 className="font-sora text-4xl/150 font-bold text-white">
               How it works?
             </h3>
 
-            <button className="uppercase rounded-lg border border-white p-4 text-white hover:text-white/80">
+            <button className="uppercase rounded-lg border border-white md:p-4 p-2 h-fit text-white hover:text-white/80 whitespace-nowrap">
               6 steps
             </button>
           </section>
@@ -327,7 +327,7 @@ export default function Home() {
 
         {/* Blog Section */}
 
-        <div className="pt-140 flex flex-col gap-8 md:px-96 px-5">
+        <div className="py-140 flex flex-col gap-8 md:px-96 px-5">
           <h3 className="text-neutral-600 text-sora text-4xl/150 font-bold  ">
             Blog Post
           </h3>
@@ -404,60 +404,59 @@ export default function Home() {
               )
             )}
           </div>
-
-          {/* <section className="bg-[url(/spiral-frame.png)] pl-144 flex items-center bg-cover bg-center w-full">
-            <article className="flex flex-col gap-6">
-              <h2 className="max-w-[531px] text-white text-4xl/150 font-bold font-sora">
-                Leave medication reminders and tracking to us.
-              </h2>
-
-              <p className="text-white font-jakarta text-base/150 font-normal w-[587px]">
-                Discover a seamless way to manage your health. Download our app
-                today and gain access to intuitive features that help you stay
-                on top of your medication regimen effortlessly. Experience
-                personalized reminders, precise tracking, and easy communication
-                with healthcare providers—all at your fingertips.
-              </p>
-
-              <section className="flex gap-[18px] pt-2">
-                <button className="bg-neutral-600 text-white px-2 py-1 rounded flex gap-1">
-                  <FaGooglePlay color="white" size="36px" />
-                  <article className="leading-[16px]">
-                    <span className="uppercase text-[10px]">Get it on</span>
-                    <h5 className="leading-[16px] font-jakarta">Google Play</h5>
-                  </article>
-                </button>
-                <button className="bg-neutral-600 text-white pl-1 pr-2 py-1 rounded flex gap-1">
-                  <IoLogoApple color="white" size="36px" />
-                  <article className="leading-[16px]">
-                    <span className="uppercase text-[10px]">Get it on</span>
-                    <h5 className="leading-[16px] font-jakarta">Google Play</h5>
-                  </article>
-                </button>
-              </section>
-            </article>
-
-            <Image
-              fill
-              className="!relative cursor-pointer w-1/2 h-fit"
-              alt="Company Logo"
-              src="/nurse.png"
-            />
-          </section> */}
         </div>
+        {/* <section className="bg-[url(/spiral-frame.png)] pl-144 flex items-center bg-cover bg-center w-full">
+          <article className="flex flex-col gap-6">
+            <h2 className="max-w-[531px] text-white text-4xl/150 font-bold font-sora">
+              Leave medication reminders and tracking to us.
+            </h2>
+
+            <p className="text-white font-jakarta text-base/150 font-normal w-[587px]">
+              Discover a seamless way to manage your health. Download our app
+              today and gain access to intuitive features that help you stay on
+              top of your medication regimen effortlessly. Experience
+              personalized reminders, precise tracking, and easy communication
+              with healthcare providers—all at your fingertips.
+            </p>
+
+            <section className="flex gap-[18px] pt-2">
+              <button className="bg-neutral-600 text-white px-2 py-1 rounded flex gap-1">
+                <FaGooglePlay color="white" size="36px" />
+                <article className="leading-[16px]">
+                  <span className="uppercase text-[10px]">Get it on</span>
+                  <h5 className="leading-[16px] font-jakarta">Google Play</h5>
+                </article>
+              </button>
+              <button className="bg-neutral-600 text-white pl-1 pr-2 py-1 rounded flex gap-1">
+                <IoLogoApple color="white" size="36px" />
+                <article className="leading-[16px]">
+                  <span className="uppercase text-[10px]">Get it on</span>
+                  <h5 className="leading-[16px] font-jakarta">Google Play</h5>
+                </article>
+              </button>
+            </section>
+          </article>
+
+          <Image
+            fill
+            className="!relative cursor-pointer w-1/2 h-fit"
+            alt="Company Logo"
+            src="/nurse.png"
+          />
+        </section> */}
       </main>
 
       <footer className="flex flex-col">
-        <div className="px-96 py-50 flex justify-between items-center flex-wrap">
+        <div className="md:px-96 px-5 py-50 flex justify-between items-center gap-3 flex-wrap">
           <section>
             <Image
               fill
-              className="!relative !w-198 !h-74 aspect-[2.3/1] cursor-pointer"
+              className="!relative !w-[198px] h-[74px] cursor-pointer object-cover"
               alt="Company Logo"
               src="/MediSync Logo.svg"
             />
 
-            <p className="max-w-[405px] text-neutral-600 font-jakarta text-base/150 font-normal">
+            <p className="min-[892px]:max-w-[405px] text-neutral-600 font-jakarta text-base/150 font-normal">
               MediSyncCare is a cutting-edge digital platform designed to
               address the challenges of medication adherence among individuals
               managing chronic conditions.
@@ -484,22 +483,22 @@ export default function Home() {
             </figure>
           </section>
 
-          <section className="flex flex-col gap-6 items-center justify-center">
-            <p className="font-jakarta text-base/150 font-normal text-neutral-600 max-w-[352px]">
+          <section className="flex flex-col gap-6 items-center justify-center w-full">
+            <p className="font-jakarta text-base/150 font-normal text-neutral-600 min-[892px]:max-w-[352px]">
               Subscribe to stay tuned for new web design and latest updates.
               Let&apos;s do it!
             </p>
 
-            <form className="flex gap-2 items-center">
+            <form className="flex gap-2 items-center max-[500px]:flex-col w-full">
               <input
                 type="email"
-                className="py-[18px] pl-[17px] rounded-[60px] text-neutral-200 text-sm leading-normal bg-[#F6F6F6] pr-115"
+                className="py-[18px] pl-[17px] rounded-[60px] text-neutral-200 text-sm leading-normal bg-[#F6F6F6] pr-115 w-full"
                 placeholder="Enter your Email Address"
               />
 
               <button
                 type="submit"
-                className="px-[26px] text-white bg-primary-500 h-56 rounded-[60px]">
+                className="px-[26px] text-white bg-primary-500 h-56 rounded-[60px] w-full">
                 Subscribe
               </button>
             </form>
