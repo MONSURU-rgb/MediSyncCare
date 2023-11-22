@@ -125,7 +125,7 @@ export default function Home() {
 
       <main>
         {/*  Hero Section */}
-        <div className="grid gap-96 pt-90 pb-70 grid-cols-2 px-96">
+        <div className="grid gap-96 pt-90 pb-70 min-[874px]:grid-cols-2 md:px-96 px-5">
           <section className="flex flex-col gap-3">
             <article className="rounded-[60px] py-3 px-[14px] gap-[10px] border border-[#D1E5FF] bg-primary-50 flex w-fit">
               <AiFillLock size="18" color="#032F69" />
@@ -134,11 +134,11 @@ export default function Home() {
               </p>
             </article>
 
-            <h2 className="font-sora text-4xl/150 font-bold text-primary-900  max-w-[533px]">
+            <h2 className="font-sora text-4xl/150 font-bold text-primary-900  min-[874px]:max-w-[533px]">
               Revolutionary Medication Adherence Solutions for Chronic Wellness
             </h2>
 
-            <p className="font-jakarta text-[16px]/150 font-normal max-w-[533px]">
+            <p className="font-jakarta text-[16px]/150 font-normal min-[874px]:max-w-[533px]">
               Crafting a Digital Frontier that Empowers Patients and Healthcare
               Experts to Seamlessly Manage Medication Regimens and Foster
               Lasting Health
@@ -184,8 +184,8 @@ export default function Home() {
 
           <Image
             fill
-            className="!relative w-full cursor-pointer"
-            alt="Company Logo"
+            className="!relative w-full cursor-pointer object-cover"
+            alt="Hero section Image"
             src="/hero-section-image.jpg"
           />
         </div>
@@ -232,11 +232,11 @@ export default function Home() {
             Our Core Features
           </h3>
 
-          <section className="flex gap-[18px]">
-            <article className="flex flex-col gap-5 w-1/3">
+          <section className="grid gap-[18px] min-[1000px]:grid-cols-3 min-[500px]:grid-cols-2">
+            <article className="flex flex-col gap-5">
               <Image
                 fill
-                className="!relative w-full cursor-pointer aspect-[1.2/1]"
+                className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
                 alt="Company Logo"
                 src="/hero-section-image.jpg"
               />
@@ -252,10 +252,10 @@ export default function Home() {
                 preferred timings.
               </p>
             </article>
-            <article className="flex flex-col gap-5 w-1/3">
+            <article className="flex flex-col gap-5">
               <Image
                 fill
-                className="!relative w-full cursor-pointer aspect-[1.2/1]"
+                className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
                 alt="Company Logo"
                 src="/hero-section-image.jpg"
               />
@@ -271,10 +271,10 @@ export default function Home() {
                 overview.
               </p>
             </article>
-            <article className="flex flex-col gap-5 w-1/3">
+            <article className="flex flex-col gap-5">
               <Image
                 fill
-                className="!relative w-full cursor-pointer aspect-[1.2/1]"
+                className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
                 alt="Company Logo"
                 src="/hero-section-image.jpg"
               />
@@ -327,12 +327,12 @@ export default function Home() {
 
         {/* Blog Section */}
 
-        <div className="pt-140 flex flex-col gap-8">
-          <h3 className="text-neutral-600 text-sora text-4xl/150 font-bold  px-96">
+        <div className="pt-140 flex flex-col gap-8 md:px-96 px-5">
+          <h3 className="text-neutral-600 text-sora text-4xl/150 font-bold  ">
             Blog Post
           </h3>
-
-          <div className="flex gap-4 md:px-96 px-5 justify-between">
+          {/* className="flex gap-4 md:px-96 px-5 justify-between" */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {dataForBlogSection.map(
               (
                 { image, health_scope_1, health_scope_2, title, post_duration },
@@ -340,7 +340,7 @@ export default function Home() {
               ) => (
                 <div key={id} className="flex flex-col">
                   <article
-                    className="!rounded-lg h-[clamp(200px,22.5vw,359px)] bg-no-repeat pt-5 px-[23px] flex gap-1 aspect-[1.2/1]"
+                    className="!rounded-lg h-[359px] pt-5 px-[23px] flex gap-1  bg-cover bg-center bg-no-repeat"
                     style={{ background: image }}>
                     <span className="rounded py-2 px-[10px] bg-[rgba(255,_255,_255,_0.20)] h-fit text-white cursor-pointer">
                       {health_scope_1}
@@ -350,7 +350,7 @@ export default function Home() {
                     </span>
                   </article>
 
-                  <div className="flex justify-between max-w-[406px] items-center">
+                  <div className="flex justify-between md:max-w-[406px] items-center">
                     <section className="pt-[16px] flex gap-[14px]">
                       <Image
                         fill
@@ -374,12 +374,12 @@ export default function Home() {
                     </time>
                   </div>
 
-                  <section className="w-[406px] flex flex-col gap-[10px]">
+                  <section className="md:max-w-[406px] flex flex-col gap-[10px]">
                     <h2 className="pt-4 pb-1 text-neutral-600 font-sora font-bold text-[26px]/150">
                       {title}
                     </h2>
 
-                    <p className="text-[#5D6A85] font-jakarta text-base/150 max-w-[406px]">
+                    <p className="text-[#5D6A85] font-jakarta text-base/150 md:max-w-[406px]">
                       Never miss a dose again! With our intuitive medication
                       reminder feature, managing your medication schedule has
                       never been easier. Simply input your medications, dosage
