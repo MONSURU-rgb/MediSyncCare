@@ -1,5 +1,14 @@
 import { FiDownload } from "react-icons/fi";
 
+export interface ArticleData {
+  image: string;
+  health_scope_1: string;
+  health_scope_2: string;
+  title: string;
+  post_duration: string;
+  writer?: string;
+}
+
 export const howItWorksSectionData = [
   {
     icon: <FiDownload color="#032F69" size="16px" />,
@@ -60,5 +69,31 @@ export const dataForBlogSection = [
     health_scope_2: "Health Managment",
     title: "How To Always Track Your Medicine Intake.",
     post_duration: "2 minute read",
+  },
+];
+export const dataForMedicineTrackingBlogSection = [
+  {
+    image: "url(/kidney-ears.png)",
+    health_scope_1: "Health Management",
+    health_scope_2: "Self Care",
+    title: "Kidneys, eyes, ears, and more: Why do we have a spare?",
+    post_duration: "2 minute read",
+    writer: "Joanna Wellick",
+  },
+  {
+    image: "url(/produce-prescription.png)",
+    health_scope_1: "Mobile Health",
+    health_scope_2: "Health Managment",
+    title: "Produce prescriptions may promote better heart health.",
+    post_duration: "3 minute read",
+    writer: "Wilson John",
+  },
+  {
+    image: "url(/abdominal-tract.png)",
+    health_scope_1: "Mobile Health",
+    health_scope_2: "Health Managment",
+    title: "How To Always Track Your Medicine Intake.",
+    post_duration: "2 minute read",
+    writer: "Hilda Victoria",
   },
 ];

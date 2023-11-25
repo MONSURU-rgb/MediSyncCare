@@ -60,7 +60,9 @@ const config: Config = {
       },
 
       lineHeight: {
-        "150": "150%",
+        150: "150%",
+        180: "180%",
+        200: "200%",
       },
 
       spacing: {
@@ -71,6 +73,7 @@ const config: Config = {
         70: "clamp(40px,4.4vw,70px)",
         71: "clamp(48px,4.5vw,71px)",
         74: "clamp(46px,4.63vw,74px)",
+        81: "clamp(56px,4.72vw,81px)",
         90: "clamp(48px,5.6vw,90px)",
         96: "clamp(50px,6vw,96px)",
         115: "clamp(60px,7.2vw,115px)",

@@ -9,6 +9,7 @@ import {
   HowItWorksSection,
   PartnersSection,
 } from "@/components";
+import { dataForBlogSection } from "@/utils/data";
 
 export function Homepage() {
   return (
@@ -29,7 +30,7 @@ export function Homepage() {
         <HowItWorksSection />
 
         {/* Blog Section */}
-        <BlogSection />
+        <BlogSection title="Blog Post" data={dataForBlogSection} />
         {/* Detailed Overview */}
         <DetailedOverview />
       </main>

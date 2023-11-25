@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col">
-      <div className="md:px-96 px-5 py-50 flex justify-between items-center gap-3 flex-wrap">
+    <footer className="flex flex-col py-50">
+      <div className="md:px-96 px-5 flex justify-between items-center gap-3 flex-wrap">
         <section>
           <Image
             fill

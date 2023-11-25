@@ -8,3 +8,5 @@ export * from "./footer";
 export * from "./detailed-overview";
 export * from "./blog-section";
 export * from "./homepage";
+export * from "./icon";
+export * from "./track-your-medicine-intake";

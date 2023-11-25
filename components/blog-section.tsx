@@ -1,24 +1,37 @@
-import { dataForBlogSection } from "@/utils/data";
+import { ArticleData, dataForBlogSection } from "@/utils/data";
 import { Clock } from "iconsax-react";
 import Link from "next/link";
 import Image from "next/image";
 
-export function BlogSection() {
+export function BlogSection({
+  title,
+  data,
+}: {
+  title: string;
+  data: ArticleData[];
+}) {
   return (
     <div className="py-140 flex flex-col gap-8 md:px-96 px-5">
       <h3 className="text-neutral-600 text-sora text-4xl/150 font-bold  ">
-        Blog Post
+        {title}
       </h3>
       {/* className="flex gap-4 md:px-96 px-5 justify-between" */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {dataForBlogSection.map(
+        {data.map(
           (
-            { image, health_scope_1, health_scope_2, title, post_duration },
+            {
+              image,
+              health_scope_1,
+              health_scope_2,
+              title,
+              post_duration,
+              writer,
+            },
             id
           ) => (
             <div key={id} className="flex flex-col">
               <article
-                className="!rounded-lg h-[359px] pt-5 px-[23px] flex gap-1 !bg-cover !bg-[center] !bg-no-repeat"
+                className="!rounded-lg h-[359px] pt-5 px-[13px] flex gap-1 !bg-cover !bg-[center] !bg-no-repeat"
                 style={{ background: image }}>
                 <span className="rounded py-2 px-[10px] bg-[rgba(255,_255,_255,_0.20)] h-fit text-white cursor-pointer">
                   {health_scope_1}
@@ -39,7 +52,7 @@ export function BlogSection() {
 
                   <article className="flex flex-col gap-[2px]">
                     <h2 className="font-sora text-lg/150 font-semibold">
-                      Joanna Wellick
+                      {writer ? writer : "Joanna Wellick"}
                     </h2>
                     <h5 className="font-jakarta text-sm/150 text-[#121416]">
                       Medical Doctor
@@ -66,7 +79,11 @@ export function BlogSection() {
               </section>
               <section className="pt-5 flex justify-between max-w-[406px] items-center">
                 <Link
-                  href="/"
+                  href={
+                    title === "How To Always Track Your Medicine Intake."
+                      ? "/track-your-medicine-intake"
+                      : "/"
+                  }
                   className="text-primary-500 font-jakarta text-base/150 underline font-semibold">
                   Read Post
                 </Link>

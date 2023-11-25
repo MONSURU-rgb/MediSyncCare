@@ -4,7 +4,7 @@ import { IoLogoApple } from "react-icons/io";
 
 export function DetailedOverview() {
   return (
-    <section className="bg-[url(/spiral-frame.png)] md:pl-144 flex items-center bg-cover bg-center w-full px-5 py-5">
+    <section className="bg-[url(/spiral-frame.png)] md:pl-144 flex items-center bg-cover bg-center w-full px-5 py-71">
       <article className="flex flex-col gap-6">
         <h2 className="md:max-w-[531px] text-white min-[567px]:text-4xl/150 font-bold font-sora text-2xl/150">
           Leave medication reminders and tracking to us.
