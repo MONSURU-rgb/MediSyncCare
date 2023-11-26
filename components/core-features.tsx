@@ -13,7 +13,7 @@ export function CoreFeatures() {
             fill
             className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
             alt="Company Logo"
-            src="/hero-section-image.jpg"
+            src="/set-medication-reminder.png"
           />
 
           <h3 className="text-neutral-600 font-sora text-[26px]/150 font-bold">
@@ -32,7 +32,7 @@ export function CoreFeatures() {
             fill
             className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
             alt="Company Logo"
-            src="/hero-section-image.jpg"
+            src="/track-medication-intake.png"
           />
 
           <h3 className="text-neutral-600 font-sora text-[26px]/150 font-bold">
@@ -50,7 +50,7 @@ export function CoreFeatures() {
             fill
             className="!relative w-full cursor-pointer aspect-[1.2/1] object-cover"
             alt="Company Logo"
-            src="/hero-section-image.jpg"
+            src="/healthcare-collaboration.png"
           />
 
           <h3 className="text-neutral-600 font-sora text-[26px]/150 font-bold">

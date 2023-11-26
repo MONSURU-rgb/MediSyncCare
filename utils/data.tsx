@@ -1,3 +1,8 @@
+import AccountSetup from "@/components/icon/account-setup";
+import HealthCollaboration from "@/components/icon/health-collaboration";
+import MedicationInput from "@/components/icon/medication-input";
+import SetReminder from "@/components/icon/set-reminder";
+import TrackAdherence from "@/components/icon/track-adherence";
 import { FiDownload } from "react-icons/fi";
 
 export interface ArticleData {
@@ -17,31 +22,31 @@ export const howItWorksSectionData = [
       "Begin by downloading the medical platform's app from the respective app store",
   },
   {
-    icon: <FiDownload color="#032F69" size="16px" />,
+    icon: <AccountSetup />,
     title: "Account Setup",
     description:
       "Create an account within the app by providing necessary details and Set up a secure login to access the App",
   },
   {
-    icon: <FiDownload color="#032F69" size="16px" />,
+    icon: <MedicationInput />,
     title: "Medication Input",
     description:
       "Input your prescribed medications into the app, specifying details like names, dosages, timing etc.",
   },
   {
-    icon: <FiDownload color="#032F69" size="16px" />,
+    icon: <SetReminder />,
     title: "Set Reminders",
     description:
       "Utilize the app's reminder feature to set up alerts for each medication as per your prescribed schedule.",
   },
   {
-    icon: <FiDownload color="#032F69" size="16px" />,
+    icon: <TrackAdherence />,
     title: "Track Adherence",
     description:
       "Regularly monitor your adherence progress using the app's tracking feature and review your intake history",
   },
   {
-    icon: <FiDownload color="#032F69" size="16px" />,
+    icon: <HealthCollaboration />,
     title: "Health Collaboration",
     description:
       "Share adherence reports and progress updates with your healthcare provider ",

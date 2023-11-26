@@ -22,19 +22,25 @@ export function Footer() {
               fill
               className="!relative !w-10 !h-10 cursor-pointer object-center"
               alt="Facebook Logo"
-              src="/facebook.png"
+              src="/facebook-logo.svg"
             />
             <Image
               fill
               className="!relative !w-10 !h-10 cursor-pointer"
               alt="Twitter Logo"
-              src="/twitter.png"
+              src="/twitter-logo.svg"
             />
             <Image
               fill
               className="!relative !w-10 !h-10 cursor-pointer"
               alt="Instagram Logo"
-              src="/instagram.png"
+              src="/instagram-logo.svg"
+            />
+            <Image
+              fill
+              className="!relative !w-10 !h-10 cursor-pointer"
+              alt="Instagram Logo"
+              src="/linkedIn-logo.svg"
             />
           </figure>
         </section>
@@ -61,7 +67,7 @@ export function Footer() {
         </section>
       </div>
 
-      <span className="text-neutral-600 font-jakarta text-base/150 self-center">
+      <span className="text-neutral-600 font-jakarta text-base/150 self-center pt-45">
         &copy; 2023 All Rights Reserved
       </span>
     </footer>

@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <div className="grid gap-96 pt-90 pb-70 min-[874px]:grid-cols-2 md:px-96 px-5">
       <section className="flex flex-col gap-3">
-        <article className="rounded-[60px] py-3 px-[14px] gap-[10px] border border-[#D1E5FF] bg-primary-50 sm:flex w-fit !hidden">
+        <article className="rounded-[60px] py-3 px-[14px] gap-[10px] border border-[#D1E5FF] bg-primary-50 sm:flex w-fit max-[643px]:hidden">
           <AiFillLock size="18" color="#032F69" />
           <p className="text-[13px]/150 font-normal text-primary-900">
             The Best Medical Adherence Platform in Nigeria
@@ -44,11 +44,11 @@ export function HeroSection() {
           </section>
 
           <figure className="flex gap-6">
-            <Avatar.Group className="flex">
-              <Avatar src="/client-image-1.svg" />
-              <Avatar src="/client-image-1.svg" />
-              <Avatar src="/client-image-1.svg" />
-              <Avatar src="/client-image-1.svg" />
+            <Avatar.Group spacing="sm">
+              <Avatar src="/client-image-1.svg" radius="xl" />
+              <Avatar src="/avatar-image-2.svg" radius="xl" />
+              <Avatar src="/avatar-image-3.svg" radius="xl" />
+              <Avatar src="/avatar-image-4.svg" radius="xl" />
             </Avatar.Group>
 
             <article>
@@ -65,9 +65,9 @@ export function HeroSection() {
 
       <Image
         fill
-        className="!relative w-full cursor-pointer object-cover"
+        className="!relative w-full cursor-pointer object-contain aspect-auto"
         alt="Hero section Image"
-        src="/hero-section-image.jpg"
+        src="/mobile-mimic-image.png"
       />
     </div>
   );
