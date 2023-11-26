@@ -11,7 +11,9 @@ export function BlogSection({
   data: ArticleData[];
 }) {
   return (
-    <div className="py-140 flex flex-col gap-8 md:px-96 px-5">
+    <div
+      className="py-140 flex flex-col gap-8 md:px-96 px-5 scroll-smooth"
+      id="blog-post">
       <h3 className="text-neutral-600 text-sora text-4xl/150 font-bold  ">
         {title}
       </h3>

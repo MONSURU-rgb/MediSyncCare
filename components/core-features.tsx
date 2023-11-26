@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export function CoreFeatures() {
   return (
-    <div className="py-144 flex flex-col gap-56 md:px-96 px-5">
+    <div
+      className="py-144 flex flex-col gap-56 md:px-96 px-5"
+      id="core-features">
       <h3 className="text-neutral-600 font-sora md:text-4xl/150 font-bold text-center whitespace-nowrap text-2xl/150">
         Our Core Features
       </h3>

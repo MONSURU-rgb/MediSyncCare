@@ -3,7 +3,9 @@ import React from "react";
 
 export function HowItWorksSection() {
   return (
-    <div className="p-45 rounded-3xl bg-primary-500 flex flex-col gap-10 md:mx-96 mx-5">
+    <div
+      className="p-45 rounded-3xl bg-primary-500 flex flex-col gap-10 md:mx-96 mx-5"
+      id="how-it-works">
       <section className="flex justify-between items-center">
         <h3 className="font-sora text-4xl/150 font-bold text-white">
           How it works?

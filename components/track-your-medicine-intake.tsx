@@ -49,7 +49,7 @@ export function TrackYourMedicineIntake() {
               </span>
             </article>
 
-            <div className="flex justify-between max-[800px]:flex-col max-[800px]:gap-5 max-[800px]:px-5">
+            <div className="flex justify-between max-[800px]:flex-col max-[800px]:gap-5">
               <section className="pt-[16px] flex gap-[14px]">
                 <Image
                   fill
@@ -115,7 +115,7 @@ export function TrackYourMedicineIntake() {
                       Learning different methods of tracking enhances our
                       commitment to health management
                     </blockquote>
-                    <blockquote className="font-sora text-2xl uppercase font-semibold max-[400px]:block">
+                    <blockquote className="hidden font-sora text-2xl uppercase font-semibold max-[400px]:block">
                       Learning different methods of tracking enhances our
                       commitment to health management
                     </blockquote>

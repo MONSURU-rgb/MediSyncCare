@@ -15,7 +15,7 @@ export default function Document() {
         />
       </Head>
 
-      <body>
+      <body className="scroll-smooth">
         <Main />
         <NextScript />
       </body>

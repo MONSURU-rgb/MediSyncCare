@@ -43,12 +43,12 @@ export function HeroSection() {
             </button>
           </section>
 
-          <figure className="flex gap-6">
+          <figure className="flex gap-6 flex-wrap">
             <Avatar.Group spacing="sm">
-              <Avatar src="/client-image-1.svg" radius="xl" />
-              <Avatar src="/avatar-image-2.svg" radius="xl" />
-              <Avatar src="/avatar-image-3.svg" radius="xl" />
-              <Avatar src="/avatar-image-4.svg" radius="xl" />
+              <Avatar src="/client-image-1.svg" radius="xl" size={64} />
+              <Avatar src="/avatar-image-2.svg" radius="xl" size={64} />
+              <Avatar src="/avatar-image-3.svg" radius="xl" size={64} />
+              <Avatar src="/avatar-image-4.svg" radius="xl" size={64} />
             </Avatar.Group>
 
             <article>

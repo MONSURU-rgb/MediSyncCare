@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Clock } from "iconsax-react";
 import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
-import { Avatar, Burger } from "@mantine/core";
+import { Avatar, Burger, Overlay } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 export function Header() {
@@ -47,16 +47,22 @@ export function Header() {
         <section className="md:hidden">
           <Burger
             opened={opened}
-            onClick={toggle}
+            onClick={() => {
+              toggle();
+            }}
             aria-label="Toggle navigation"
-            className="md:hidden block relative"
+            className="md:hidden block relative z-[999]"
             transitionDuration={500}
           />
+
+          {opened && <Overlay color="#000" opacity={0.5} zIndex={10} />}
 
           {opened && (
             <HamburgerDropdown
               styles="font-jakarta text-base text-neutral-600 font-normal cursor-pointer hover:text-white/50 whitespace-nowrap flex flex-col p-4 bg-primary-700 rounded-lg gap-5 text-white absolute right-[0px] z-50 md:hidden duration-500"
               withDownloadButton={true}
+              toggle={toggle}
+              opened={opened}
             />
           )}
         </section>
