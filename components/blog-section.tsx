@@ -84,7 +84,7 @@ export function BlogSection({
                   href={
                     title === "How To Always Track Your Medicine Intake."
                       ? "/track-your-medicine-intake"
-                      : "/"
+                      : "/track-your-medicine-intake"
                   }
                   className="text-primary-500 font-jakarta text-base/150 underline font-semibold">
                   Read Post
