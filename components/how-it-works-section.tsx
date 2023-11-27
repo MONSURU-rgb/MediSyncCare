@@ -25,7 +25,7 @@ export function HowItWorksSection() {
             <h3 className="font-sora text-[26px]/150 font-bold text-white pt-56">
               {title}
             </h3>
-            <p className="text-[#BEC5D2] text-lg/[160%] font-medium pt-1 min-[877px]:w-[300px]">
+            <p className="text-[#BEC5D2] text-lg/[160%] font-medium pt-1 [@media(min-width:877px)]:w-[300px]">
               {description}
             </p>
           </article>

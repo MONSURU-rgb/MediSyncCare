@@ -4,9 +4,9 @@ import { IoLogoApple } from "react-icons/io";
 
 export function DetailedOverview() {
   return (
-    <section className="bg-[url(/spiral-frame.png)] md:pl-144 flex items-center bg-cover bg-center w-full px-5 max-[1187x]:py-0 py-71">
+    <section className="bg-[url(/spiral-frame.png)] md:pl-144 flex items-center bg-cover bg-center w-full px-5 mine:py-0 py-71">
       <article className="flex flex-col gap-6">
-        <h2 className="md:max-w-[531px] text-white min-[567px]:text-4xl/150 font-bold font-sora text-2xl/150">
+        <h2 className="md:max-w-[531px] text-white [@media(min-width:567px)]:text-4xl/150 font-bold font-sora text-2xl/150">
           Leave medication reminders and tracking to us.
         </h2>
 
@@ -38,7 +38,7 @@ export function DetailedOverview() {
 
       <Image
         fill
-        className="!relative cursor-pointer w-full h-fit max-[1187px]:hidden"
+        className="!relative cursor-pointer w-full h-fit [@media(max-width:1187px)]:hidden"
         alt="Nurse image"
         src="/nurse.png"
       />

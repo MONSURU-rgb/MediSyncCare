@@ -16,7 +16,7 @@ export function TrackYourMedicineIntake() {
           <h4 className="font-jakarta text-lg font-semibold text-primary-500 text-center">
             Inside MediSyncCare
           </h4>
-          <div className="flex flex-col gap-5 items-center max-[500px]:px-5">
+          <div className="flex flex-col gap-5 items-center [@media(max-width:500px)]:px-5">
             <h2 className="max-w-[662px] text-neutral-600 font-sora text-[42px]/150 font-bold text-center">
               How To Always Track Your Medicine Intake.
             </h2>
@@ -37,9 +37,9 @@ export function TrackYourMedicineIntake() {
             </section>
           </div>
 
-          <div className="flex gap-45 flex-col max-[800px]:px-5">
+          <div className="flex gap-45 flex-col [@media(max-width:800px)]:px-5">
             <article
-              className="!rounded-lg h-[562px] pt-5 px-[13px] flex gap-1 !bg-cover !bg-[center] !bg-no-repeat w-[clamp(400px,84vw,1027px)] max-[500px]:w-full max-[500px]:hidden"
+              className="!rounded-lg h-[562px] pt-5 px-[13px] flex gap-1 !bg-cover !bg-[center] !bg-no-repeat w-[clamp(400px,84vw,1027px)] [@media(max-width:500px)]:w-full [@media(max-width:500px)]:hidden"
               style={{ background: "url(/mobile-health.png)" }}>
               <span className="rounded py-2 px-[10px] bg-[rgba(0,_0,_0,_0.20)] h-fit text-white cursor-pointer">
                 Mobile Health
@@ -49,7 +49,7 @@ export function TrackYourMedicineIntake() {
               </span>
             </article>
 
-            <div className="flex justify-between max-[800px]:flex-col max-[800px]:gap-5">
+            <div className="flex justify-between [@media(max-width:800px)]:flex-col [@media(max-width:800px)]:gap-5">
               <section className="pt-[16px] flex gap-[14px]">
                 <Image
                   fill
@@ -68,7 +68,7 @@ export function TrackYourMedicineIntake() {
                 </article>
               </section>
 
-              <section className="max-w-[clamp(400px,43.4vw,700px)] text-[#121416] flex flex-col gap-20 font-jakarta text-base/200 font-normal max-[800px]:max-w-full">
+              <section className="max-w-[clamp(400px,43.4vw,700px)] text-[#121416] flex flex-col gap-20 font-jakarta text-base/200 font-normal [@media(max-width:800px)]:max-w-full">
                 <article className="flex flex-col gap-4">
                   <p>
                     Managing medication intake consistently is vital for
@@ -111,11 +111,11 @@ export function TrackYourMedicineIntake() {
                   <article className="flex gap-6 items-start">
                     <Quote />
 
-                    <blockquote className="font-sora text-4xl uppercase font-semibold max-[400px]:hidden">
+                    <blockquote className="font-sora text-4xl uppercase font-semibold [@media(max-width:400px)]:hidden">
                       Learning different methods of tracking enhances our
                       commitment to health management
                     </blockquote>
-                    <blockquote className="hidden font-sora text-2xl uppercase font-semibold max-[400px]:block">
+                    <blockquote className="hidden font-sora text-2xl uppercase font-semibold [@media(max-width:400px)]:block">
                       Learning different methods of tracking enhances our
                       commitment to health management
                     </blockquote>

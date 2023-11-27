@@ -9,7 +9,7 @@ export function CoreFeatures() {
         Our Core Features
       </h3>
 
-      <section className="grid gap-[18px] min-[1000px]:grid-cols-3 min-[500px]:grid-cols-2">
+      <section className="grid gap-[18px][@media(min-width:1000px)]:grid-cols-3 [@media(min-width:500px)]:grid-cols-2">
         <article className="flex flex-col gap-5">
           <Image
             fill

@@ -23,8 +23,8 @@ export function Header() {
         </article>
       </section>
 
-      <nav className="min-[800px]:px-96 px-5 py-18 flex justify-between items-center">
-        <section className="flex md:justify-between w-full items-center max-[541px]:flex-wrap gap-10 max-[541px]:gap-2">
+      <nav className="[@media(min-width:800px)]:px-96 px-5 py-18 flex justify-between items-center">
+        <section className="flex md:justify-between w-full items-center [@media(max-width:541px)]:flex-wrap gap-10 [@media(max-width:541px)]:gap-2">
           <Link href="/">
             <Image
               fill
@@ -33,7 +33,7 @@ export function Header() {
               src="/MediSync-Logo-2.png"
             />
           </Link>
-          <HamburgerDropdown styles="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 min-[841px]:inline-flex whitespace-nowrap transition duration-500" />
+          <HamburgerDropdown styles="hidden font-jakarta text-base text-neutral-600 font-normal gap-56 cursor-pointer hover:text-neutral-400 [@media(min-width:841px)]:inline-flex whitespace-nowrap transition duration-500" />
           <Link href="/">
             <button className="rounded-[50px] p-3 bg-primary-500 gap-[10px] items-center cursor-pointer hover:bg-primary-500/90 hidden md:flex">
               <FiDownload color="white" />

@@ -12,7 +12,7 @@ export function Footer() {
             src="/MediSync Logo.svg"
           />
 
-          <p className="min-[892px]:max-w-[405px] text-neutral-600 font-jakarta text-base/150 font-normal">
+          <p className="[@media(min-width:892px)]:max-w-[405px] text-neutral-600 font-jakarta text-base/150 font-normal">
             MediSyncCare is a cutting-edge digital platform designed to address
             the challenges of medication adherence among individuals managing
             chronic conditions.
@@ -46,12 +46,12 @@ export function Footer() {
         </section>
 
         <section className="flex flex-col gap-6 items-center justify-center">
-          <p className="font-jakarta text-base/150 font-normal text-neutral-600 min-[892px]:max-w-[352px]">
+          <p className="font-jakarta text-base/150 font-normal text-neutral-600 [@media(min-width:892px)]:max-w-[352px]">
             Subscribe to stay tuned for new web design and latest updates.
             Let&apos;s do it!
           </p>
 
-          <form className="flex gap-2 items-center max-[500px]:flex-col w-full">
+          <form className="flex gap-2 items-center [@media(max-width:500px)]:flex-col w-full">
             <input
               type="email"
               className="py-[18px] pl-[17px] rounded-[60px] text-neutral-200 text-sm leading-normal bg-[#F6F6F6] pr-115 w-full"
