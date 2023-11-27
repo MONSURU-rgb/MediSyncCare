@@ -7,9 +7,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      mine: "1187px",
-    },
     extend: {
       colors: {
         primary: {
