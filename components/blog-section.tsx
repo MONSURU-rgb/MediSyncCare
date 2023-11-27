@@ -18,7 +18,7 @@ export function BlogSection({
         {title}
       </h3>
       {/* className="flex gap-4 md:px-96 px-5 justify-between" */}
-      <div className="grid [@media(min-width:768px)]:grid-cols-2 [@media(min-width:1100px)]:grid-cols-3 gap-6">
+      <div className="grid [@media(min-width:768px,max-width:1099px)]:grid-cols-2 [@media(min-width:1100px)]:grid-cols-3 gap-6">
         {data.map(
           (
             {
